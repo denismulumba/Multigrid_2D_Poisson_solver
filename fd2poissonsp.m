@@ -10,13 +10,15 @@ h = (b-a)/(m+1);
 uexact = @(x, y) sin(pi*x).*sin(pi*y);
 
 %f = @(x,y) 10*pi^2*(1+cos(4*pi*(x+2*y))-2*sin(2*pi*(x+2*y))).*...
-    exp(sin(2*pi*(x+2*y)));
+   % exp(sin(2*pi*(x+2*y)));
  f = @(x,y)  -2*pi^2*sin(pi*x).*sin(pi*y);
 
 g = @(x,y) uexact(x,y);
 
+
 tic
 [u,x,y] = testFdPoisson(f, g, a, b, m);
+
 gedirect = toc;
 
 fprintf('Direct Gaussian elimination takes %d s\n', gedirect);

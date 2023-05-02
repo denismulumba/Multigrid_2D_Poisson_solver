@@ -27,7 +27,8 @@ Define the grid size and the number of levels to use in the multigrid method.
 Define the right-hand side function f and the boundary conditions.
 
 Call the V_cycle.m function, using the test_script function passing in the grid size, the number of levels, f, and the boundary conditions.
-The poisson2d function returns the solution u after a certain threshold is reached.
+
+The V_cycle function returns the solution u after a certain threshold is reached.
 See test_script.m for an example. Several right hand sides are included in this script.
 
 An exact solution function  (exact_solution.m) is included to compare the approximate solution with this exact.

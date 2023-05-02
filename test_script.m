@@ -66,4 +66,6 @@ surf(XX, YY, abs(error))
 xlabel('X');
 ylabel('Y');
 zlabel('U');
-title('Approximation of U(x,y)');
+zlabel('error');
+%title('Approximation of U(x,y)');
+title('error in the approximation U(x,y)');
