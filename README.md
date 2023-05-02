@@ -30,6 +30,7 @@ Call the V_cycle.m function, using the test_script function passing in the grid 
 
 The V_cycle function returns the solution u after a certain threshold is reached.
 See test_script.m for an example. Several right hand sides are included in this script.
+Important to note that we can play with the size of the matrix in this script using `nlevels` parameter.
 
 An exact solution function  (exact_solution.m) is included to compare the approximate solution with this exact.
 

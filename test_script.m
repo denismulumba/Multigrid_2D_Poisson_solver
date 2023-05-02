@@ -1,4 +1,4 @@
-% This is an example showing how to call the mgd2d solver.
+% This is an example showing how to call the MG2dPoisson solver using (V_cycle.m).
 %pre = false;
 % analytical solution
 Uann = @(x, y) sin(pi*x).*sin(pi*y);
